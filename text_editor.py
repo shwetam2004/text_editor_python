@@ -6,7 +6,7 @@ stimulator_window = Tk()
 stimulator_window.geometry('600x600') 
 stimulator_window.title('Shweta Muthukumar')
 
-heading = Label(stimulator_window, text='Welcome to the Text Editor', font=('bold', 16), bg='yellow')
+heading = Label(stimulator_window, text='Welcome to the Text Editor', font=('Hello valentica', 20), bg='turquoise')
 heading.pack()
 
 scrollbar = Scrollbar(stimulator_window)
@@ -25,7 +25,7 @@ def save():
         output_file.write(text)
     stimulator_window.title(f"Entitled - {filepath}")
 
-button = Button(stimulator_window, text='Save', font=('normal', 10), command=save, bg='yellow')
+button = Button(stimulator_window, text='Save', font=('Comic sans', 14), command=save, bg='yellow')
 button.place(x=270, y=520)
 
 stimulator_window.mainloop()
